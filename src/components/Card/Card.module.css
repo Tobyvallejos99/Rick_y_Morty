@@ -1,0 +1,39 @@
+.fondo{
+    background-image:url(https://i.pinimg.com/originals/51/ea/4a/51ea4ae12a54f46a5d04d583877f2aab.gif);
+    max-width: 500px;
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+
+} 
+
+.title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(226, 4, 4);
+    font-family: 'Amatic SC', cursive;;
+}
+
+.especie {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    color:rgb(0, 238, 255);
+    font-family: 'Cinzel Decorative', cursive;;
+}
+
+.genero {
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: -67px;
+    color:rgb(0, 238, 255);
+    font-family: 'Cinzel Decorative', cursive;;
+}
