@@ -1,4 +1,4 @@
-import estilo from './SearchBar.module.css';
+import styles from './SearchBar.module.css';
 import { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
@@ -9,9 +9,9 @@ const SearchBar = ({ onSearch }) => {
    }
 
    return (
-      <div className={estilo.head__search}> 
-         <input type='search' className={estilo.head__contentInput} value={character} onChange={handleChange}/>
-         <button onClick={() => onSearch(character)} className={estilo.head__contentButton}>Buscar</button>
+      <div className={styles.head__search}> 
+         <input type='search' className={styles.head__contentInput} value={character} onChange={handleChange}/>
+         <button onClick={() => onSearch(character)} className={styles.head__contentButton}>Buscar</button>
       </div>
    );
 }
