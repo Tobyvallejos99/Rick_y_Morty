@@ -1,39 +1,62 @@
-.fondo{
-    background-image:url(https://i.pinimg.com/originals/51/ea/4a/51ea4ae12a54f46a5d04d583877f2aab.gif);
-    max-width: 500px;
-    height: 65vh;
-    background-size: cover;
-    background-position: center;
-
-} 
-
-.title {
-    font-size: 3em;
+.card {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: rgb(226, 4, 4);
-    font-family: 'Amatic SC', cursive;;
+    background-color: #f1f1f1;
+    width: 250px; 
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.especie {
+
+
+.card__head {
     display: flex;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 10px;
-    color:rgb(0, 238, 255);
-    font-family: 'Cinzel Decorative', cursive;;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.genero {
+.card__headName, .card__headBoton {
+    margin: .4rem;
+}
+
+.card__headName {
+    font-weight: 600;
+    color: #FFF;
+    background: #000000be;
+    padding: 0 .3rem;
+    border-radius: 5px;
+}
+
+.card__headBoton {
+    background-color: #302E3E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: .3s all eas
+}
+
+.card__headBoton:hover {
+    background-color: #f30d0d;
+}
+
+
+
+.card__peopleIMG {
+    width: 230px;
+}
+
+
+
+.card__info {
     display: flex;
-    font-size: 30px;
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 100px;
-    margin-top: -67px;
-    color:rgb(0, 238, 255);
-    font-family: 'Cinzel Decorative', cursive;;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 .6rem;
+}
+
+.card__infoSpecies, .card__infoGender {
+    font-weight: 600;
+    color: #1b1a1a;
+    font-size: 14px;
 }

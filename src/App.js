@@ -6,23 +6,23 @@ import characters, { Rick } from './data.js'
 
 function App () {
   return (
-    <div className='App' style={{ padding: '25px' }}>
-      <div>
+    <div className='head'>
+      <div className='app'>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/800px-Rick_and_Morty.svg.png" alt= "icono" />
         <Card
           name={Rick.name}
           species={Rick.species}
           gender={Rick.gender}
           image={Rick.image}
           onClose={() => window.alert('Emulamos que se cierra la card')}
-        />
+          />
       </div>
-      <hr />
       <div>
         <Cards
           characters={characters}
         />
       </div>
-      <hr />
+
       <div>
         <SearchBar
           onSearch={(characterID) => window.alert(characterID)}

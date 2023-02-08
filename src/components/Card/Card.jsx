@@ -1,17 +1,23 @@
 import styles from './Card.module.css';
 
-export default function Card(props) {
-
+const Card = ({name, species, gender, image, onClose}) => {
    return (
-      <div className={styles.fondo}>
-         <button onClick={props.onClose}>X</button>
-         <h2 className={styles.title}>{props.name}</h2>
-         <img  src={props.image} alt="" />
-         <div>
-            <h2 className={styles.especie}>{props.species}</h2>
-            <h2 className={styles.genero}>{props.gender}</h2>
-         </div>
-         
-      </div>
+      <div className={styles.card}>
+         <section className={styles.card__head}>
+            <p className={styles.card__headName}>{name}</p>
+            <button className={styles.card__headBoton} onClick={onClose}>X</button>
+         </section>
 
-   )}
+         <section>
+            <img  src={image} alt={name} className={styles.card__peopleIMG}/>
+         </section>
+
+         <section className={styles.card__info}>
+            <p className={styles.card__infoSpecies}>Species: {species}</p>
+            <p className={styles.card__infoGender}>Gender: {gender}</p>
+         </section>
+      </div>
+   );
+}
+
+export default Card;
