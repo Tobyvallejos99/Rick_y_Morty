@@ -13,9 +13,9 @@ const Nav = ({ onSearch, handleRandomPersonaje }) => {
             </div>
 
             <div className={styles.head__group}>
-                <button className={styles.head__contentButton} onClick={handleRandomPersonaje}>
-                    {/* <img src={cloud_download} alt="icon bootstrap"/><i>Personaje</i> */}
-                </button>
+                {/* <button className={styles.head__contentButton} onClick={handleRandomPersonaje}>
+                    <img src={cloud_download} alt="icon bootstrap"/><i>Personaje</i>
+                </button> */}
                 <SearchBar onSearch={onSearch} />
             </div>
         </nav>

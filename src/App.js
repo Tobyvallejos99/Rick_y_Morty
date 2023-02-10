@@ -25,19 +25,21 @@ function App () {
 
 
   return (
-    <div className='head'>
+    <div className="body">
+      <div  className='head'>
 
-      <div className='app'>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/800px-Rick_and_Morty.svg.png" alt= "icono" />
-      </div>
+        <div className='app'>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/800px-Rick_and_Morty.svg.png" alt= "icono" />
+        </div>
 
-      <Nav onSearch={onSearch}/>
+        <Nav onSearch={onSearch}/>
 
-      <div>
-        <Cards
-          onClose={onClose}
-          characters={characters}
-        />
+        <div>
+          <Cards
+            onClose={onClose}
+            characters={characters}
+          />
+        </div>
       </div>
     </div>
   )
