@@ -1,7 +1,3 @@
-.App {
-   text-align: center;
-   padding-top: 10px;
-}
 
 .head {
    background: url(https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-en-el-espacio-6046.jpg?s=large);
@@ -18,8 +14,4 @@
    height: 100vh;
    overflow-x: hidden;
    overflow-y: auto;
-}
-
-.body{
-   position: relative;
 }
