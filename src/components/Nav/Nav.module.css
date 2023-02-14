@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .head__nav {
@@ -14,27 +15,55 @@
     text-decoration: none;
 }
 
-.head__contentTitle {
-    margin: 0;
+/* .head__contentTitle {
+    margin: 10;
     font-weight: normal;
     font-style: italic;
     color: #fff;
     cursor: default;
     transition: .3s all ease;
-}
-
+    margin-left: 20px;
+} */
+/* 
 .head__contentTitle:hover {
     color: #F0F0F0;
-}
+    text-decoration: underline;
+    margin-left: 10px;
+    background:#01695b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
+} */
 
 .head__contentAbout {
+    text-decoration: underline;
+    background: #01695b;
     color: #fff;
-    text-decoration: none;
-    cursor: default;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
+    margin-left: 5px;
+    margin-right:5px ;
+    margin-top: -100px;
 }
 
 .head__contentAbout:hover {
     text-decoration: underline;
+    background: #07cfb5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
 }
 
 .head__group {
@@ -45,21 +74,18 @@
 }
 
 .head__contentButton {
-    background: #4B809B;
+    background: #025313;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     width: fit-content;
     padding: .5rem 1rem;
     letter-spacing: .1rem;
     transition: .2s all ease;
+    margin-right: 20px;
 
-    /* Estilos para el icono */
-    display: flex;
-    align-items: center;
-    gap: .3rem;
 }
 
 .head__contentButton:hover {
-    background: #3B6F8B;
+    background: #02d10c;
 }

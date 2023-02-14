@@ -9,7 +9,7 @@ const About = () => {
                     <h3 className={styles.leyendHero}>Estudiante y pronto full stack developer! </h3>
 
                     <p className={styles.descriptionHero}>
-                        Soy un tecnico agronomo de 23 años con gusto particular por la programacion, la ciencia y tecnologia! <span><a href="https://www.soyhenry.com/" target="_blank">SoyHenry</a></span>
+                        Soy un tecnico agronomo de 23 años con gusto particular por la programacion, la ciencia y tecnologia! estudiando en <span><a href="https://www.soyhenry.com/" target="_blank">SoyHenry</a></span>
                     </p>
                 </div>
 
@@ -19,16 +19,10 @@ const About = () => {
             <section className={styles.contenidoAbout}>
                 <h3 className={styles.titleAbout}>SOBRE MI</h3>
 
-                {/* <p className={styles.descriptionAbout}>
-                    Desde el inicio de mi carrera como sesarrollador de software, me han convertido en una persona con metas
-                    claras, cada dia me levanto con las ganas de aprender temas nuevos. Esto hace de mi una persona constante,
-                    curiosa y sin miedos a enfrentarme a nuevos Retos.
-                </p>
                 <p className={styles.descriptionAbout}>
-                    Actualmente soy Programador Backend junior egresado en el año 2018 como Analista Programador Computacional 
-                    pero no conforme con eso fui mas alla, de Tecnico a formarme como Ingeniero en Informatica en  Mencion en
-                    Desarrollo de Sistema
-                </p> */}
+                    ya tenia leves conocimientos a cerca de la programacion pero nunca tan avanzado como lo que se esta viendo en soy henry ademas de que me doy cuenta que a medida que avanzo en la carrera mas me gusta esto!
+                    </p>
+
             </section>
         </div>
     )

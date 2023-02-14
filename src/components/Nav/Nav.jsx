@@ -1,21 +1,21 @@
 import SearchBar from '../SearchBar/SearchBar.jsx'
 import style from './Nav.module.css';
-// import cloud_download from "../../cloud-download.svg";
 import { Link } from 'react-router-dom';
 
 const Nav = ({ onSearch, handleRandomPersonaje }) => {
     return (
         <nav className={style.head__content}>
-            <div className={style.head__nav}>
-                {/* Esta etiqueta h1 es el remplazo del Home */}
-                <Link to="/" className={style.head__contentTitle_enlace}><h1 className={style.head__contentTitle}></h1></Link>
-                <Link to="/about" className={style.head__contentAbout}>Sobre mí</Link>
+            <div className={style.head__nav}> 
+                <Link to="/Home" className={style.head__contentTitle_enlace}><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1200px-Rick_and_Morty.svg.png"
+                width="500px" height="150px"/></Link>
+                <img url= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1200px-Rick_and_Morty.svg.png"/> 
             </div>
 
             <div className={style.head__group}>
-                {/* <button className={style.head__contentButton} onClick={handleRandomPersonaje}>
-                    <img src={cloud_download} alt="icon bootstrap"/><i>Personaje</i>
-                </button> */}
+                <Link to="/about" className={style.head__contentAbout}>Sobre mí</Link>
+                <button className={style.head__contentButton} onClick={handleRandomPersonaje}>
+                    <i>Al Azar!</i>
+                </button>
                 <SearchBar onSearch={onSearch} />
             </div>
         </nav>
