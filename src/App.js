@@ -76,9 +76,9 @@ function App () {
         <div className='container'>
           <section>
             <Routes>
-              <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
-              <Route path='/about' element={<About />}>Sobre mí</Route>
-              <Route path='/detail/:detailId' element={<Detail />} /> 
+              <Route path='home' element={<Cards characters={characters} onClose={onClose} />} />
+              <Route path='about' element={<About />}>Sobre mí</Route>
+              <Route path='detail/:detailId' element={<Detail/>} /> 
               <Route path=":error" element={<Error404 />}/>
             </Routes>
           </section>

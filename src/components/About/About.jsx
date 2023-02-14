@@ -13,7 +13,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <img src="" alt="programming" className={styles.imgHero}/>
+                <img src="./About/ede591fc-5da8-4c92-897e-85796c25241f.jpg" alt="programming" className={styles.imgHero}/>
             </section>
 
             <section className={styles.contenidoAbout}>
