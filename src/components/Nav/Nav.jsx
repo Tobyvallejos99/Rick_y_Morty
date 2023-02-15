@@ -13,10 +13,12 @@ const Nav = ({ onSearch, handleRandomPersonaje }) => {
 
             <div className={style.head__group}>
                 <Link to="/about" className={style.head__contentAbout}>Sobre mí</Link>
-                <button className={style.head__contentButton} onClick={handleRandomPersonaje}>
+                <Link to="/favorites" className={style.head__contentAbout}>Favoritos</Link>
+                <SearchBar onSearch={onSearch} />
+                <button className={style.head__contentAzar} onClick={handleRandomPersonaje}>
                     <i>Al Azar!</i>
                 </button>
-                <SearchBar onSearch={onSearch} />
+                
             </div>
         </nav>
     );

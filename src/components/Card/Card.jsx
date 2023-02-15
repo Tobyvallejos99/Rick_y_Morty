@@ -1,9 +1,41 @@
 import style from './Card.module.css';
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { addFavorite, removeFavorite } from "../../redux/actions/index";
 
 const Card = ({name, species, gender, image, onClose, id}) => {
+
+   const [isFav, setFav] = React.useState(false);
+
+   const myFavorites = useSelector((state) => state.myFavorites);
+   const dispatch = useDispatch();
+
+      function handleFavorite() {
+      if (isFav) {
+         setFav(false);
+         dispatch(removeFavorite(id));
+      } else {
+         setFav(true);
+         dispatch(addFavorite({name, species, gender, image, onClose, id}));
+      }
+   }
+
+      React.useEffect(() => {
+      myFavorites.forEach((fav) => {
+         if (fav.id === id) {
+            setFav(true);
+         }
+      });
+      }, [myFavorites]);
+
    return (
       <div className={style.card}>
+            {isFav ? (
+         <button onClick={handleFavorite}>❤️</button>
+         ) : (
+         <button onClick={handleFavorite}>🤍</button>
+         )}
          <section className={style.card__head}>
             <Link to={`/detail/${id}`}> {/* si borro el / no funciona, esto va junto con el /home*/}
                <h2 className={style.card__headName}>{name}</h2>

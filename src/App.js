@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
 import Favorites from "./components/Favorites/Favorites";
-import { useSelector } from 'react-redux';
+
 
 function App () {
   const location = useLocation();

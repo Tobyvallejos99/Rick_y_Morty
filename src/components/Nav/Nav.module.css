@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    background: #01d19d3a;
+    border-radius: 25px;
 }
 
 .head__nav {
@@ -40,9 +42,8 @@
 } */
 
 .head__contentAbout {
-    text-decoration: underline;
     background: #01695b;
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 6px;
     width: fit-content;
@@ -55,8 +56,30 @@
 }
 
 .head__contentAbout:hover {
-    text-decoration: underline;
     background: #07cfb5;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
+}
+
+.head__contentAzar{
+    background: #02a525;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
+    margin-left: 5px;
+    margin-right:5px ;
+}
+.head__contentAzar:hover {
+    background: #000000;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -75,7 +98,7 @@
 
 .head__contentButton {
     background: #025313;
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 6px;
     width: fit-content;
