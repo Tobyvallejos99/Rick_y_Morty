@@ -1,0 +1,66 @@
+.detailCharacter {
+	margin-top: -1rem;
+	background: #01695bd5;
+	border-radius: 60px;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+.detailCharacter .btnHomeGroup {
+
+	display: flex; 
+	align-items: center;
+}
+
+.btnHome {
+	font-size: 1rem;
+	border: none;
+	background: transparent;
+	margin-bottom: .8rem;
+}
+
+.btnHome_enlace {
+    background: #01695b;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+    transition: .2s all ease;
+	margin-left: 5px;
+}
+
+.btnHome_enlace:hover {
+	text-decoration: underline;
+}
+
+.btnHome:before {
+	content: "\276E";
+	font-size: 1rem;
+	color: #fff;
+	margin-right: .5rem;
+}
+
+.dataCharacter {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 1rem;
+}
+
+.dataCharacter .infoCharacter {
+	color: #ffffff;
+}
+
+.dataCharacter .infoCharacter > h2 {
+	height: 3rem;
+	margin-top: 0;
+	font-weight: 500;
+	color: #000000;
+}
+
+.dataCharacter .infoCharacter > h3 {
+	font-weight: 20;
+	
+}
